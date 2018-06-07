@@ -1,7 +1,16 @@
 <div class="cbp-l-project-title">Monitor index</div>
 <div class="cbp-l-project-subtitle">전 세계 주식 지수를 표기해주는 모니터링 프로그램입니다.</div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E81g5tiHncM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe id="monitor-video" width="560" height="315" src="https://www.youtube.com/embed/E81g5tiHncM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen onload="resize()"></iframe>
+
+<script>
+    function resize() {
+        var width = $('#monitor-video').offsetParent().width();
+        var height = (width * 569 / 960);
+        $('#monitor-video').css('width', width);
+        $('#monitor-video').height(height);
+    }
+</script>
 
 <div class="cbp-l-project-container">
     <div class="cbp-l-project-desc">
@@ -17,7 +26,6 @@
             <li><strong>Date</strong>2018.05</li>
             <li><strong>Categories</strong>Web</li>
         </ul>
-        <a href="http://mylittlemaid.net" target="_blank" class="cbp-l-project-details-visit">visit the site</a>
     </div>
 </div>
 
